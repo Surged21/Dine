@@ -1,46 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <title>Portfolio</title>
-</head>
-<body>
-  <hearder class="header">
-    <a href="#" class="logo">My Self</a>
-    <nav class="navbar">
-      <a href="#" style="--i:1"class="active">Home</a>
-      <a href="#" style="--i:2">About</a>
-      <a href="#" style="--i:3">Skill</a>
-      <a href="#" style="--i:4">Portfolio</a>
-      <a href="#" style="--i:5">Contact</a>
-    </nav>
-  </hearder>
-  <section class="home">
-    <div class="home-content">
-      <h3> Hi, It's Me </h3>
-      <h1> Jardine Saring </h>
-      <h3> And I'm a <span class="text"></span></h3>
-      <p> I'm a 2nd Year BSIT student and I have many experience in work. 
-      <br>And i love playing online games, listening to music specially to kpop songs. </p></br>
-      <div class="home-sci">
-        <a href="#" style="--i:7"><i class='bx bxl-facebook-square'></i></a>
-        <a href="#" style="--i:8"><i class='bx bxl-instagram' ></i></a>
-        <a href="#" style="--i:9"><i class='bx bxl-tiktok'></i></a>
-        <a href="#" style="--i:10"><i class='bx bxl-twitter'></i></a>
-      </div>
-      <a href="#" class="btn-box"> More About Me </a>
-      </div>
-  </section>
-  <script src="main.js"></script>
-</body>
-</html>
-
-*{
+  <style>
+    *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -48,7 +10,7 @@
 }
 body
 {
-  color: #ffa500;
+  color: #363e3e;
 }
 .header
 {
@@ -66,7 +28,7 @@ body
 .logo {
   position: relative;
   font-size: 25px;
-  color: #fff;
+  color: #00ffff;
   text-decoration: none;
   font-weight: 600;
   cursor: default;
@@ -76,7 +38,7 @@ body
 .navbar a{
   display: inline-block;
   font-size: 25px;
-  color: #fff;
+  color: #0ef;
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
@@ -93,6 +55,7 @@ body
   width: 100%;
   justify-content: space-between;
   height: 100vh;
+  background:;
   background-size: center;
   background-position: center;
   display: flex;
@@ -170,7 +133,7 @@ body
   box-shadow: 0 0 5px #0ef, 0 0 25px #0ef
 }
 .btn-box:hover {
-  box-shadow: 0 0 5px #00ffff, 0 0 25px #00ffff, 0 0 50px #00ffff, 0 0 100px #00ffff, 0 0 200px #00ffff
+  box-shadow: 0 0 5px #00ffff, 0 0 25px #00ffff, 0 0 50px #00ffff, 0 0 100px #00ffff, 0 0 200px #00ffff 
 }
 @keyframes slideRight {
   0%{
@@ -212,11 +175,51 @@ body
     opacity: 1;
   }
 }
-
-var typed = new typed(".text", {
-  String:["Introvert" , "Kpop Fan" , "Gamer"],
+  </style>
+  <script>
+    var typed = new typed(".text", {
+  String:["Introvert","Kpop Fan","Gamer"],
   typeSpeed:100,
   backSpeed:100,
   backDelay:1000,
   loop:true
 });
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <title>Portfolio</title>
+</head>
+<body>
+  <hearder class="header">
+    <a href="#" class="logo">My Self</a>
+    <nav class="navbar">
+      <a href="#" style="--i:1"class="active">Home</a>
+      <a href="#" style="--i:2">About</a>
+      <a href="#" style="--i:3">Skill</a>
+      <a href="#" style="--i:4">Portfolio</a>
+      <a href="#" style="--i:5">Contact</a>
+    </nav>
+  </hearder>
+  <section class="home">
+    <div class="home-content">
+      <h3> Hi, It's Me </h3>
+      <h1> Jardine Saring </h>
+      <h3> And I'm a <span class="text"></span></h3>
+      <p> I'm a 2nd Year BSIT student of CSU-APARRI. 
+      <br>I love playing online games, listening music specially to kpop songs and I'm a Introvert person. </p></br>
+      <div class="home-sci">
+        <a href="#" style="--i:7"><i class='bx bxl-facebook-square'></i></a>
+        <a href="#" style="--i:8"><i class='bx bxl-instagram' ></i></a>
+        <a href="#" style="--i:9"><i class='bx bxl-tiktok'></i></a>
+        <a href="#" style="--i:10"><i class='bx bxl-twitter'></i></a>
+      </div>
+      <a href="#" class="btn-box"> More About Me </a>
+      </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
